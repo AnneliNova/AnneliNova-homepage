@@ -1,21 +1,27 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  color: inherit; 
+  text-decoration: none; 
+  color: var(--border-color);
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.5;
   
-  body {
-    font-family: Arial, Helvetica, sans-serif;
-    line-height: 1.5;
-  
-    --primary-text-color: #181820;
-    --secondary-text-color: #5c5c62;
-    --durability-text-color: #6a737d9c;
-    --icon-color: #6a737d;
-    --border-color: #ff9a0045;
-    --text-decoration-color: #ff9a00;
-  }
-  
+  --primary-text-color: #181820;
+  --secondary-text-color: #5c5c62;
+  --durability-text-color: #6a737d9c;
+  --icon-color: #6a737d;
+  --border-color: #5802317a;
+  --text-decoration-color: #ff00bff2;
+}
+
   .container {
     margin: 0 auto;
     padding: 0 30px;
@@ -68,9 +74,9 @@
   }
 
 
- /* contack info styles */
+ /* contact info styles */
 
- .contact-info__header,
+.contact-info__header,
 .contact-info__sub-header {
   text-align: center;
 }
@@ -116,7 +122,7 @@
 }
 
 .contact-info__item-icon path {
-  fill: var(--icon-color);
+  fill: var(--border-color);
 }
 
 .contact-info__item-icon {
@@ -126,8 +132,8 @@
 
 .contact-info__avatar {
   border-radius: 50%;
-  width: 100px;
-  height: 100px;
+  width: 200px;
+  height: 200px;
   object-fit: cover;
   border: 3px solid;
   border-color: var(--text-decoration-color);
@@ -153,7 +159,7 @@
   }
   
   .intro__icon path {
-    fill: var(--text-decoration-color);
+    fill: var(--border-color);
   }
   
   .intro_text {
